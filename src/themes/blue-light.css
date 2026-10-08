@@ -1,0 +1,65 @@
+:root, body, body.dark {
+  color-scheme: light !important;
+  --tg-scrollbar: rgba(0, 0, 0, 0.2);
+
+  --WDS-accent: #3390ec !important;
+  --WDS-accent-RGB: 51, 144, 236 !important;
+  --WDS-accent-emphasized: #3390ec !important;
+  --WDS-accent-emphasized-RGB: 51, 144, 236 !important;
+  --WDS-accent-deemphasized: #e3effd !important;
+  --WDS-accent-deemphasized-RGB: 227, 239, 253 !important;
+  --WDS-app-wash: #ffffff !important;
+  --WDS-background-wash-plain: #ffffff !important;
+  --WDS-background-wash-plain-RGB: 255, 255, 255 !important;
+  --WDS-background-wash-inset: #ffffff !important;
+  --WDS-background-wash-inset-RGB: 255, 255, 255 !important;
+  --WDS-background-elevated-wash-plain: #ffffff !important;
+  --WDS-background-elevated-wash-inset: #f4f4f5 !important;
+  --WDS-surface-default: #ffffff !important;
+  --WDS-surface-default-RGB: 255, 255, 255 !important;
+  --WDS-surface-emphasized: #ffffff !important;
+  --WDS-surface-elevated-default: #ffffff !important;
+  --WDS-surface-elevated-emphasized: #f4f4f5 !important;
+  --WDS-surface-highlight: #f4f4f5 !important;
+  --WDS-surface-pressed: #e9e9eb !important;
+  --WDS-surface-inverse: #000000 !important;
+  --WDS-components-active-list-row: #3390ec !important;
+  --WDS-components-active-list-row-RGB: 51, 144, 236 !important;
+  --WDS-components-filter-surface-selected: #e3effd !important;
+  --WDS-components-filter-surface-selected-RGB: 227, 239, 253 !important;
+  --WDS-components-surface-nav-bar: #ffffff !important;
+  --WDS-content-default: #000000 !important;
+  --WDS-content-deemphasized: #707579 !important;
+  --WDS-content-action-default: #000000 !important;
+  --WDS-content-action-emphasized: #3390ec !important;
+  --WDS-content-on-accent: #ffffff !important;
+  --WDS-content-external-link: #3390ec !important;
+  --WDS-content-read: #4fae4e !important;
+  --WDS-content-inverse: #ffffff !important;
+  --WDS-lines-divider: #e7e7e7 !important;
+  --WDS-lines-outline-deemphasized: #e7e7e7 !important;
+  --WDS-persistent-always-branded: #3390ec !important;
+  --WDS-systems-bubble-surface-incoming: #ffffff !important;
+  --WDS-systems-bubble-surface-incoming-RGB: 255, 255, 255 !important;
+  --WDS-systems-bubble-surface-outgoing: #effdde !important;
+  --WDS-systems-bubble-surface-outgoing-RGB: 239, 253, 222 !important;
+  --WDS-systems-bubble-surface-system: rgba(255, 255, 255, 0.85) !important;
+  --WDS-systems-bubble-surface-e2e: rgba(255, 255, 255, 0.85) !important;
+  --WDS-systems-bubble-surface-business: #ffffff !important;
+  --WDS-systems-bubble-content-deemphasized: #6a8c5e !important;
+  --WDS-systems-bubble-content-e2e: #707579 !important;
+  --WDS-systems-chat-background-wallpaper: #c5d6a6 !important;
+  --WDS-systems-chat-foreground-wallpaper: rgba(255, 255, 255, 0.15) !important;
+  --WDS-systems-chat-surface-composer: #ffffff !important;
+  --WDS-systems-chat-surface-tray: #ffffff !important;
+}
+
+#pane-side [aria-selected="true"] *,
+#pane-side [aria-selected="true"] [data-icon] {
+  color: #ffffff !important;
+}
+
+#pane-side [aria-selected="true"],
+#pane-side [aria-selected="true"] [data-testid="cell-frame-container"] {
+  background-color: #3390ec !important;
+}

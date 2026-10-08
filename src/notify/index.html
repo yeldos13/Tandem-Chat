@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru" data-theme="blue-dark">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src data: https://*.whatsapp.net;">
+  <title>Tandem Chat</title>
+  <link rel="stylesheet" href="notify.css">
+</head>
+<body>
+  <article class="card" id="card">
+    <div class="avatar" id="avatar"></div>
+    <div class="content" id="content">
+      <div class="top">
+        <span class="title" id="title"></span>
+        <span class="account" id="account"></span>
+      </div>
+      <div class="body" id="body"></div>
+    </div>
+    <div class="actions">
+      <button class="icon" id="close" title="Закрыть">×</button>
+      <button class="reply-btn" id="reply-btn">Ответить</button>
+    </div>
+  </article>
+  <form class="reply" id="reply" hidden autocomplete="off">
+    <input id="reply-input" type="text" placeholder="Ваш ответ…" maxlength="4000">
+    <button type="submit" class="send" id="send" title="Отправить (Enter)">➤</button>
+  </form>
+  <p class="error" id="error"></p>
+  <script src="notify.js"></script>
+</body>
+</html>

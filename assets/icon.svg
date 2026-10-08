@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7b5cff"/>
+      <stop offset="0.55" stop-color="#b65cf0"/>
+      <stop offset="1" stop-color="#ff6b8a"/>
+    </linearGradient>
+    <linearGradient id="dots" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7b5cff"/>
+      <stop offset="1" stop-color="#e0609f"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="116" fill="url(#bg)"/>
+  <path fill="#ffffff" fill-opacity="0.45" d="M262 104h120c35.3 0 64 28.7 64 64v62c0 35.3-28.7 64-64 64h-6l26 44c2.5 4.2-2.1 9-6.4 6.6L322 294h-60c-35.3 0-64-28.7-64-64v-62c0-35.3 28.7-64 64-64z"/>
+  <path fill="#ffffff" d="M146 186h150c37.6 0 68 30.4 68 68v76c0 37.6-30.4 68-68 68H190l-58.6 37.4c-4.6 2.9-10.2-1.6-8.4-6.7L136 397.5c-31.7-5-56-32.4-56-65.5v-78c0-37.6 30.4-68 68-68z"/>
+  <circle cx="160" cy="292" r="20" fill="url(#dots)"/>
+  <circle cx="222" cy="292" r="20" fill="url(#dots)"/>
+  <circle cx="284" cy="292" r="20" fill="url(#dots)"/>
+</svg>

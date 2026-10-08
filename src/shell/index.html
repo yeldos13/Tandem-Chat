@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru" data-theme="blue-dark">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.whatsapp.net;">
+  <title>Tandem Chat</title>
+  <link rel="stylesheet" href="shell.css">
+</head>
+<body>
+  <div class="titlebar"></div>
+  <nav class="rail">
+    <div class="accounts" id="accounts"></div>
+    <button class="rail-btn add" id="add-account" title="Добавить аккаунт">
+      <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+    <div class="divider"></div>
+    <div class="sections" id="sections"></div>
+    <div class="spacer"></div>
+    <button class="rail-btn" id="lock-btn" title="Заблокировать (Ctrl+L)">
+      <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+    </button>
+    <button class="rail-btn" id="settings-btn" title="Настройки Tandem Chat">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+    </button>
+  </nav>
+
+
+  <section class="lock-screen" id="lock-screen" hidden>
+    <form class="lock-card" id="lock-form" autocomplete="off">
+      <div class="lock-icon">
+        <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      </div>
+      <h1>Tandem Chat заблокирован</h1>
+      <p class="muted">Введите код-пароль</p>
+      <input type="password" id="lock-input" placeholder="Код-пароль" autocomplete="off">
+      <p class="error" id="lock-error"></p>
+      <button type="submit" class="primary">Разблокировать</button>
+    </form>
+  </section>
+
+  <section class="modal-backdrop" id="modal" hidden>
+    <div class="modal" id="modal-body"></div>
+  </section>
+
+  <script src="shell.js"></script>
+</body>
+</html>
